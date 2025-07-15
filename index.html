@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Académie - Plateforme d'Apprentissage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Power Académie</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cours" class="nav-link">Cours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">À Propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">Bienvenue à Power Académie</h1>
+            <p class="hero-subtitle">Votre plateforme d'apprentissage pour développer vos compétences</p>
+            <button class="cta-button" onclick="scrollToSection('cours')">Découvrir nos cours</button>
+        </div>
+    </section>
+
+    <!-- Cours Section -->
+    <section id="cours" class="courses">
+        <div class="container">
+            <h2 class="section-title">Nos Cours</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <div class="course-details">
+                        <p><strong>Durée :</strong> 4 semaines</p>
+                        <p><strong>Niveau :</strong> Débutant à Avancé</p>
+                        <p><strong>Contenu :</strong> Balises, structure, sémantique, formulaires, accessibilité</p>
+                        <p><strong>Projets :</strong> Site web statique, portfolio personnel</p>
+                        <p><strong>Certification :</strong> Certificat Power Académie</p>
+                    </div>
+                    <button class="course-button">En savoir plus</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <div class="course-details">
+                        <p><strong>Durée :</strong> 6 semaines</p>
+                        <p><strong>Niveau :</strong> Débutant à Intermédiaire</p>
+                        <p><strong>Contenu :</strong> Sélecteurs, flexbox, grid, animations, responsive design</p>
+                        <p><strong>Projets :</strong> Site responsive, animations CSS, thèmes</p>
+                        <p><strong>Certification :</strong> Certificat Power Académie</p>
+                    </div>
+                    <button class="course-button">En savoir plus</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🟨</div>
+                    <h3>JavaScript</h3>
+                    <div class="course-details">
+                        <p><strong>Durée :</strong> 8 semaines</p>
+                        <p><strong>Niveau :</strong> Débutant à Avancé</p>
+                        <p><strong>Contenu :</strong> Variables, fonctions, DOM, ES6+, APIs, frameworks</p>
+                        <p><strong>Projets :</strong> Site web interactif, application de gestion</p>
+                        <p><strong>Certification :</strong> Certificat Power Académie</p>
+                    </div>
+                    <button class="course-button">En savoir plus</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🐍</div>
+                    <h3>Python</h3>
+                    <div class="course-details">
+                        <p><strong>Durée :</strong> 10 semaines</p>
+                        <p><strong>Niveau :</strong> Débutant à Intermédiaire</p>
+                        <p><strong>Contenu :</strong> Syntaxe, OOP, bibliothèques, Django, data analysis</p>
+                        <p><strong>Projets :</strong> Application web, analyse de données, bot</p>
+                        <p><strong>Certification :</strong> Certificat Power Académie</p>
+                    </div>
+                    <button class="course-button">En savoir plus</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🐘</div>
+                    <h3>PHP</h3>
+                    <div class="course-details">
+                        <p><strong>Durée :</strong> 8 semaines</p>
+                        <p><strong>Niveau :</strong> Intermédiaire</p>
+                        <p><strong>Contenu :</strong> Syntaxe, OOP, MySQL, Laravel, sessions, sécurité</p>
+                        <p><strong>Projets :</strong> Site dynamique, CMS, système d'authentification</p>
+                        <p><strong>Certification :</strong> Certificat Power Académie</p>
+                    </div>
+                    <button class="course-button">En savoir plus</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">☕</div>
+                    <h3>Java</h3>
+                    <div class="course-details">
+                        <p><strong>Durée :</strong> 12 semaines</p>
+                        <p><strong>Niveau :</strong> Intermédiaire à Avancé</p>
+                        <p><strong>Contenu :</strong> OOP, collections, Spring Boot, bases de données</p>
+                        <p><strong>Projets :</strong> API REST, application Android, système de gestion</p>
+                        <p><strong>Certification :</strong> Certificat Power Académie</p>
+                    </div>
+                    <button class="course-button">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <!-- Section Formateur -->
+            <div class="instructor-section">
+                <div class="instructor-content">
+                    <div class="instructor-image">
+                        <div class="image-container">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpn05QQW_V6aiAxaGdzdQwKfck0AhpP4_ZQ&s" alt="Ing. Fedlin CHARLESTIN">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h2 class="instructor-title">Votre Formateur Expert</h2>
+                        <h3 class="instructor-name">Ing. Fedlin CHARLESTIN</h3>
+                        <div class="instructor-badge">Ingénieur en Informatique</div>
+                        <p class="instructor-description">
+                            Ingénieur passionné avec plus de 5 ans d'expérience dans le développement logiciel et l'enseignement. 
+                            Spécialisé dans les technologies web modernes, l'intelligence artificielle et l'architecture logicielle.
+                        </p>
+                        <div class="instructor-skills">
+                            <div class="skill-item">
+                                <span class="skill-icon">🎓</span>
+                                <span>Formation Pédagogique</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">💻</span>
+                                <span>Développement Full-Stack</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🚀</span>
+                                <span>Innovation Technologique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>À Propos de Power Académie</h2>
+                    <p>Power Académie est une plateforme d'apprentissage en ligne dédiée à l'acquisition de compétences en programmation. 
+                    Fondée par l'ingénieur Fedlin CHARLESTIN, notre mission est de former la nouvelle génération de développeurs avec une approche pratique et moderne.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3 class="counter" data-target="500">0</h3>
+                            <p>Étudiants</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="counter" data-target="6">0</h3>
+                            <p>Langages</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="counter" data-target="95">0</h3>
+                            <p>Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Apprentissage programmation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Nous sommes là pour vous aider</h3>
+                    <p>N'hésitez pas à nous contacter pour toute question concernant nos cours ou votre apprentissage.</p>
+                    <div class="contact-item">
+                        <strong>Email:</strong> poweracdemie@gmail.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>Téléphone:</strong> (+55)46 99111-7608
+                    </div>
+                    <div class="contact-item">
+                        <strong>Modalités:</strong> 100% Online
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="nom">Nom complet</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Power Académie. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title">Titre du cours</h3>
+            <p id="modal-description">Description détaillée du cours...</p>
+            <button class="modal-button">S'inscrire maintenant</button>
+        </div>
+    </div>
+
+    <!-- EmailJS SDK - Must be loaded before script.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
